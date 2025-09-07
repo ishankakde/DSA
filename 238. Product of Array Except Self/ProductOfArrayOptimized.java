@@ -24,7 +24,7 @@ package com.dsa.lc;
 /*  - Time complexity  - O(n) + O(n) + O(n) -> O(3n) -> O(n) - used 3 for loops
     - Space complexity - O(n) - used two additional arrays - prefix & suffix.   */
 
-public class ProductOfArrayOptimized1 {
+public class ProductOfArrayOptimized {
     public int[] productExceptSelf(int[] nums) {
 
         int length = nums.length;
