@@ -33,7 +33,7 @@ Output: -1
 
 package com.dsa.lc;
 
-public class RotatedBinarySerach {
+public class SearchRotatedArray {
 
     public int search(int[] nums, int target) {
 
