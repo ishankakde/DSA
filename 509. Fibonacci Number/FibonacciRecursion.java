@@ -30,7 +30,7 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 
 package com.dsa.lc;
 
-public class FibonacciNumber {
+public class FibonacciRecursion {
 
     public int fib(int n) {
 
