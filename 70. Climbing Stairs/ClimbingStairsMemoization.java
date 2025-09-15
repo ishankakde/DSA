@@ -40,7 +40,7 @@ public class ClimbingStairsMemoization {
         if(cacheMap.containsKey(n)){
             return cacheMap.get(n);
         }
-        //function logic
+        //recursion
         int result =  climbStairs(n - 1) + climbStairs(n - 2);
         cacheMap.put(n, result);
         return result;
