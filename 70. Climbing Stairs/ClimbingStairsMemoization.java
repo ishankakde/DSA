@@ -28,7 +28,7 @@ Explanation: There are three ways to climb to the top.
 /* Time complexity is O(n) */
 package com.dsa.lc;
 
-public class ClimbingStairsRecursion {
+public class ClimbingStairsMemoization {
 
     public int climbStairs(int n) {
 
