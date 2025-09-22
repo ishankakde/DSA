@@ -20,3 +20,15 @@
 |[141. Linked List Cycle](https://github.com/ishankakde/DSA/tree/develop/141.%20Linked%20List%20Cycle)|
 |[876. Middle of the Linked List](https://github.com/ishankakde/DSA/tree/develop/876.%20Middle%20of%20the%20Linked%20List)|
 |[21. Merge Two Sorted Lists](https://github.com/ishankakde/DSA/tree/develop/21.%20Merge%20Two%20Sorted%20Lists)|
+
+|recursion|
+|------|
+|[recursion](https://github.com/ishankakde/DSA/tree/develop/Recursion)|
+
+|dynamic programming|
+|------|
+|[509. Fibonacci Number](https://github.com/ishankakde/DSA/tree/develop/509.%20Fibonacci%20Number)|
+|[70. Climbing Stairs](https://github.com/ishankakde/DSA/tree/develop/70.%20Climbing%20Stairs)|
+|[322. Coin Change](https://github.com/ishankakde/DSA/tree/develop/322.%20Coin%20Change)|
+|[300. Longest Increasing Subsequence](https://github.com/ishankakde/DSA/tree/develop/300.%20Longest%20Increasing%20Subsequence)|
+|[]()|
