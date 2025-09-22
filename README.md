@@ -10,6 +10,11 @@
 |[238. Product of Array Except Self](https://github.com/ishankakde/DSA/tree/develop/238.%20Product%20of%20Array%20Except%20Self)|
 |[53. Maximum Subarray](https://github.com/ishankakde/DSA/tree/develop/53.%20Maximum%20Subarray)|
 |[152. Maximum Product Subarray](https://github.com/ishankakde/DSA/tree/develop/152.%20Maximum%20Product%20Subarray)|
+
+
+|binary search|
+|------|
+|[704. Binary Search](https://github.com/ishankakde/DSA/tree/develop/704.%20Binary%20Search)|
 |[153. Find Minimum in Rotated Sorted Array](https://github.com/ishankakde/DSA/tree/develop/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array)|
 |[33. Search in Rotated Sorted Array](https://github.com/ishankakde/DSA/tree/develop/33.%20Search%20in%20Rotated%20Sorted%20Array)|
 
