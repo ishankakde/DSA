@@ -22,6 +22,20 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 
+Logic -
+
+Two Sum leverages a hash map (or hash table/dictionary).
+This approach achieves an O(n) time complexity by iterating through the array once.
+For each number, it calculates the "complement" (target - current number)
+and checks if this complement already exists in the hash map.
+If it does, the indices of the current number and its complement are returned.
+If not, the current number and its index are added to the hash map for future lookups.
+
+Time complexity is O(n) where
+    - n is number of elements in nums.
+    - arrays nums[] is traversed once
+    - each map operation is O(1)
+
  */
 package com.dsa.lc;
 
