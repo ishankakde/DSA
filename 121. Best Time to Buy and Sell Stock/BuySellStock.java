@@ -20,22 +20,31 @@ Input: prices = [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
 
+logic -
+create two variables to track minimum and max difference (profit) , initialize them as of day 1  -
+   1. minSoFar with price for that day which is price[0]
+   2. maxDiff = 0 , as we have not yet seen prices for other days.
+
+   If the next day price goes down then update minSoFar with new lower price.
+   If price goes up then determine new maxDiff.
+
  */
 
 package com.dsa.lc;
 
 public class BuySellStock {
     public int maxProfit(int[] prices) {
-        int diff = 0;
-        int minSoFar = prices[0];
+
+        int minSoFar = prices[0]; // price on day 1
+        int maxDiff = 0;             // diff 0 because don't know price of next day yet
 
         for(int i=0; i < prices.length; i++){
-            if(prices[i] < minSoFar){
+            if(prices[i] < minSoFar){ // if price goes down next day then set new minSoFar
                 minSoFar = prices[i];
-            }else{
-                diff = Math.max(diff, prices[i] - minSoFar);
+            }else{  // if price goes up then calculate new diff.
+                maxDiff = Math.max(maxDiff, prices[i] - minSoFar);
             }
         }
-        return diff;
+        return maxDiff;
     }
 }
