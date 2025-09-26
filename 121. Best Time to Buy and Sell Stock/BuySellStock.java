@@ -26,7 +26,7 @@ create two variables to track minimum and max difference (profit) , initialize t
    2. maxDiff = 0 , as we have not yet seen prices for other days.
 
    If the next day price goes down then update minSoFar with new lower price.
-   If price goes up then determine new maxDiff.
+   If price goes up then calculate new maxDiff.
 
  */
 
@@ -41,7 +41,7 @@ public class BuySellStock {
         for(int i=0; i < prices.length; i++){
             if(prices[i] < minSoFar){ // if price goes down next day then set new minSoFar
                 minSoFar = prices[i];
-            }else{  // if price goes up then calculate new diff.
+            }else{  // if price goes up then calculate new maxDiff.
                 maxDiff = Math.max(maxDiff, prices[i] - minSoFar);
             }
         }
