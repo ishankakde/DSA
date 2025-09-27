@@ -23,10 +23,10 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 logic -
 create two variables to track minimum and max difference (profit) , initialize them as of day 1  -
    1. minSoFar with price for that day which is price[0]
-   2. maxDiff = 0 , as we have not yet seen prices for other days.
+   2. profit = 0 , as we have not yet seen prices for other days.
 
    If the next day price goes down then update minSoFar with new lower price.
-   If price goes up then calculate new maxDiff.
+   If price goes up then calculate new profit.
 
  */
 
@@ -36,15 +36,15 @@ public class BuySellStock {
     public int maxProfit(int[] prices) {
 
         int minSoFar = prices[0]; // price on day 1
-        int maxDiff = 0;             // diff 0 because don't know price of next day yet
+        int profit = 0;             // diff 0 because don't know price of next day yet
 
-        for(int i=0; i < prices.length; i++){
+        for(int i = 0; i < prices.length; i++){
             if(prices[i] < minSoFar){ // if price goes down next day then set new minSoFar
                 minSoFar = prices[i];
-            }else{  // if price goes up then calculate new maxDiff.
-                maxDiff = Math.max(maxDiff, prices[i] - minSoFar);
+            }else{  // if price goes up then calculate new profit.
+                profit = Math.max(profit, prices[i] - minSoFar);
             }
         }
-        return maxDiff;
+        return profit;
     }
 }
