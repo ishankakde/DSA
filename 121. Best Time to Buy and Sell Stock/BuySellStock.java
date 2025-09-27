@@ -36,7 +36,7 @@ public class BuySellStock {
     public int maxProfit(int[] prices) {
 
         int minSoFar = prices[0]; // price on day 1
-        int profit = 0;             // profit 0 because don't know price on next day yet
+        int profit = 0;           // profit 0 because don't know price on next day yet
 
         for(int i = 0; i < prices.length; i++){
             if(prices[i] < minSoFar){ // if price goes down next day then set new minSoFar
