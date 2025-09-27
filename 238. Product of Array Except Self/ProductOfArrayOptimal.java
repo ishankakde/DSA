@@ -17,31 +17,39 @@ Example 2:
 Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 
+
+logic -
+Instead of creating three different arrays prefix, suffix and output use just one.
+first calculate prefix and store in output,
+then calculate suffix and multiply with prefix and store in output
+
+    - Time complexity  - O(n)
+    - Space complexity - O(1) - no additional arrays used
+
 */
 
 package com.dsa.lc;
-
-/*  - Time complexity  - O(n)
-    - Space complexity - O(1) - no additional arrays used */
 
 public class ProductOfArrayOptimal {
 
     public int[] productExceptSelf(int[] nums) {
 
         int length = nums.length;
-        int[] answer = new int[length];
+        int[] output = new int[length];
 
-        answer[0] = 1;
+        // calculate prefix
+        output[0] = 1;
         for (int i = 1; i < length; i++) {
-            answer[i] = answer[i-1] * nums[i-1];
+            output[i] = output[i - 1] * nums[i - 1];
         }
 
+        // calculate suffix
         int suffix = 1;
         for (int i = length - 2; i >= 0; i--) {
-            suffix = suffix * nums[i+1];
-            answer[i] = answer[i] * suffix;
+            suffix = suffix * nums[i + 1];
+            output[i] = output[i] * suffix;
         }
 
-        return answer;
+        return output;
     }
 }
