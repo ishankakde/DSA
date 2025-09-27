@@ -26,15 +26,16 @@ package com.dsa.lc;
 
 public class ProductOfArrayBruteForce {
     public int[] productExceptSelf(int[] nums) {
-        int[] answer = new int[nums.length];
+        int[] output = new int[nums.length];
         for(int i = 0; i < nums.length; i++){
-            answer[i] = 1;
+            int product = 1;
             for(int j = 0; j < nums.length; j++){
                 if(i != j){
-                    answer[i] = answer[i] * nums[j];
+                    product = product * nums[j];
                 }
             }
+            output[i] = product;
         }
-        return answer;
+        return output;
     }
 }
