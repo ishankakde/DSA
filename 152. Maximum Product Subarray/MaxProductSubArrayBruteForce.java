@@ -18,6 +18,12 @@ Input: nums = [-2,0,-1]
 Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
+logic -
+This is a brute force approach where code calculates product of all the possible sub-arrays and then finds the max product.
+refer code to find all possible sub arrays - https://github.com/ishankakde/DSA/blob/develop/Find%20All%20Sub-Arrays/FindAllSubArrays.java
+
+Time complexity  - O(n^2) - 2 for-loops
+
  */
 package com.dsa.lc;
 
