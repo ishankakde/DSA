@@ -8,6 +8,7 @@
 |[121. Best Time to Buy and Sell Stock](https://github.com/ishankakde/DSA/tree/develop/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock)|
 |[217. Contains Duplicate](https://github.com/ishankakde/DSA/tree/develop/217.%20Contains%20Duplicate)|
 |[238. Product of Array Except Self](https://github.com/ishankakde/DSA/tree/develop/238.%20Product%20of%20Array%20Except%20Self)|
+|[Find All Sub-Arrays](https://github.com/ishankakde/DSA/tree/develop/Find%20All%20Sub-Arrays)|
 |[53. Maximum Subarray](https://github.com/ishankakde/DSA/tree/develop/53.%20Maximum%20Subarray)|
 |[152. Maximum Product Subarray](https://github.com/ishankakde/DSA/tree/develop/152.%20Maximum%20Product%20Subarray)|
 
