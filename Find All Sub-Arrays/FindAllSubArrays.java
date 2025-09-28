@@ -19,8 +19,8 @@ public class FindAllSubArrays {
 }
 
 /*  - Time complexity  - O(n^3) - 3 for loops
-    output -
 
+    output -
     1 12 123 1234 12345
     2 23 234 2345
     3 34 345
