@@ -23,6 +23,12 @@ Input: nums = [5,4,-1,7,8]
 Output: 23
 Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
+logic -
+This is a brute force approach where code calculates sum of all the possible sub-arrays and then finds the max sum.
+refer code to find all possible sub arrays - https://github.com/ishankakde/DSA/blob/develop/Find%20All%20Sub-Arrays/FindAllSubArrays.java
+
+Time complexity  - O(n^2) - 2 for-loops
+
  */
 package com.dsa.lc;
 
