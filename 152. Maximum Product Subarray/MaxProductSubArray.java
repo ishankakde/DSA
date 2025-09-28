@@ -18,6 +18,14 @@ Input: nums = [-2,0,-1]
 Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
+logic -
+
+This algorithm is NOT Kadane's algorithm, but an adaptation of Kadane’s approach, where both the maximum and
+minimum products ending at each index are tracked. This is crucial because multiplying by a negative number
+can flip the sign, turning a minimum into a maximum. On each iteration, we update the max and min products by
+either starting fresh with the current number or extending the previous product streak. The result keeps track
+of the highest product seen so far and is returned at the end.
+
  */
 package com.dsa.lc;
 
@@ -30,16 +38,17 @@ public class MaxProductSubArray {
         int min = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
-            int val = nums[i];
-            // after multiplying with -ve number, max becomes min and min becomes max, therefore flip min/max.
-            if (val < 0) {
+            int num = nums[i];
+
+            if (num < 0) {     // if num is negative then flip min/max.
                 int temp = max;
                 max = min;
                 min = temp;
             }
-            max = Math.max(val, max * val);
-            min = Math.min(val, min * val);
 
+            max = Math.max(num, max * num);
+            min = Math.min(num, min * num);
+            
             maxProduct = Math.max(maxProduct, max);
         }
         return maxProduct;
