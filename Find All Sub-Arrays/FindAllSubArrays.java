@@ -17,3 +17,14 @@ public class FindAllSubArrays {
         }
     }
 }
+
+/*
+    output -
+
+    1 12 123 1234 12345
+    2 23 234 2345
+    3 34 345
+    4 45
+    5
+
+ */
