@@ -20,6 +20,26 @@ Input: nums = [-1,0,3,5,9,12], target = 2
 Output: -1
 Explanation: 2 does not exist in nums so return -1
 
+logic -
+
+Binary search works by repeatedly dividing a sorted array in half to find a target value.
+It compares the target to the middle element:
+    - If equal, it returns the index.
+    - If the target is smaller, it searches the left half; if larger, the right half.
+This continues until the target is found or the search space is empty.
+
+How to find mid -
+    1. int mid = (start + end) / 2;
+        may result in integer overflow if both start and end are large values
+        and adding together exceeds integers maximum value (Integer.MAX_VALUE = 2,147,483,647).
+
+    2. int mid = start + (end - start) / 2;
+        This avoids directly adding two potentially large numbers.
+        (end - start) will not cause integer overflow if start <= end.
+
+ Time  Complexity - O(log n)
+ Space Complexity - O(1)
+
  */
 
 package com.dsa.lc;
@@ -33,14 +53,15 @@ public class BinarySearch {
 
         while(start <= end){
             int mid = start + (end - start) / 2;
+
             if(target > nums[mid]){
-                start = mid+1;
+                start = mid + 1;
             }else if(target < nums[mid]){
-                end = mid -1;
+                end = mid - 1;
             }else {
-                return mid;
+                return mid;  // target found
             }
         }
-        return -1;
+        return -1;  // target not found
     }
 }
