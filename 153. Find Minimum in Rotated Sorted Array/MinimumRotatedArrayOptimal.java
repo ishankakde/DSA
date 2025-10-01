@@ -68,7 +68,6 @@ public class MinimumRotatedArray {
 
         //start == end, pointing to min element
         return nums[start];
-
     }
 }
 
