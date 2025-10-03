@@ -17,6 +17,7 @@
 |------|
 |[704. Binary Search](https://github.com/ishankakde/DSA/tree/develop/704.%20Binary%20Search)|
 |[153. Find Minimum in Rotated Sorted Array](https://github.com/ishankakde/DSA/tree/develop/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array)|
+|[154. Find Minimum in Rotated Sorted Array II](https://github.com/ishankakde/DSA/tree/develop/154.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II)|
 |[33. Search in Rotated Sorted Array](https://github.com/ishankakde/DSA/tree/develop/33.%20Search%20in%20Rotated%20Sorted%20Array)|
 |[81. Search in Rotated Sorted Array II](https://github.com/ishankakde/DSA/tree/develop/81.%20Search%20in%20Rotated%20Sorted%20Array%20II)|
 
