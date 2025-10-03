@@ -12,6 +12,7 @@
 |[53. Maximum Sum Subarray](https://github.com/ishankakde/DSA/tree/develop/53.%20Maximum%20Sum%20Subarray)|
 |[152. Maximum Product Subarray](https://github.com/ishankakde/DSA/tree/develop/152.%20Maximum%20Product%20Subarray)|
 |[Reverse An Array](https://github.com/ishankakde/DSA/tree/develop/ReverseAnArray)|
+|[189. Rotate Array](https://github.com/ishankakde/DSA/tree/develop/189.%20Rotate%20Array)|
 
 
 |binary search|
