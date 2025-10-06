@@ -22,24 +22,36 @@ Input: height = [1,1]
 Output: 1
 
 Logic -
-Brute Force approach to find all possible containers and their areas to find the max container.
-Time complexity - O(n^2)
+Two pointer approach to reduce time complexity to O(n) when compared to brute force approach O(n^2).
+Assign a start pointer and an end pointer.
+Out of the two pointer move the the smaller height pointer to the next/previous height (start++ or end--).
+repeat process to evaluate new start and end pointer until start < end.
+
+
+Time complexity - O(n)
 
  */
 package com.dsa.lc;
 
-public class MaxAreaBruteForce {
+public class MaxAreaBest {
     public int maxArea(int[] height) {
+
         int maxArea = 0;
+        int start = 0;
+        int end = height.length - 1;
 
-        for(int i = 0; i < height.length; i++){
-            for(int j = i + 1; j < height.length; j++){
+        while(start < end){
 
-                int width = j - i;
-                int minHeight = Math.min(height[i], height[j]);
-                int currentArea = minHeight * width;
+            int width = end - start;
+            int minHeight = Math.min(height[start], height[end]);
+            int currentArea = width * minHeight;
 
-                maxArea = Math.max(maxArea, currentArea);
+            maxArea = Math.max(maxArea, currentArea);
+
+            if(height[start] < height[end]){
+                start++;
+            }else{
+                end--;
             }
         }
         return maxArea;
