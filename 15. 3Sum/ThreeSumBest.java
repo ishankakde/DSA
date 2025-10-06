@@ -51,6 +51,7 @@ public class ThreeSumBest {
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length - 2; i++) {
+            //check for duplicate, if present then skip it using continue and for-loops i++ takes it to next element.
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
@@ -65,6 +66,7 @@ public class ThreeSumBest {
                     List<Integer> triplet = Arrays.asList(nums[i], nums[start], nums[end]);
                     output.add(triplet);
 
+                    //skip duplicates
                     while (start < end && nums[start] == nums[start + 1]) { start++; }
                     while (start < end && nums[end] == nums[end - 1]) { end--; }
 
