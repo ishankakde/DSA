@@ -38,6 +38,10 @@ Sort the array to make it easier to find and skip duplicates.
 Loop through for each nums[i] then use two pointers start, end to find sum of nums[i], nums[start], nums[end] = 0
 If found store the triplet, skip the duplicates and repeat by adjusting pointers.
 
+If sum < 0 which means start should be incremented to next bigger value to have bigger sum.
+If sum > 0 which means end should be decremented to a smaller value to have smaller sum.
+If sum == 0 then store the triplet and skip any duplicates and then increment start and decrement end.
+
 */
 
 package com.dsa.lc;
@@ -51,7 +55,7 @@ public class ThreeSumBest {
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length - 2; i++) {
-            //check for duplicate, if present then skip it using continue and for-loops i++ takes it to next element.
+            //check for duplicate for i, if present then skip it using continue and for-loops i++ takes it to next element.
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
@@ -66,7 +70,7 @@ public class ThreeSumBest {
                     List<Integer> triplet = Arrays.asList(nums[i], nums[start], nums[end]);
                     output.add(triplet);
 
-                    //skip duplicates
+                    //check duplicates for start and end pointers
                     while (start < end && nums[start] == nums[start + 1]) { start++; }
                     while (start < end && nums[end] == nums[end - 1]) { end--; }
 
