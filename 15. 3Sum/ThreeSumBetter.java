@@ -33,15 +33,17 @@ Explanation: The only possible triplet sums up to 0.
 
 Logic -
 
-hashing approach same as two sum problem
-more to be added.
+instead of using 3 for-loops as in brute force approach, here we use two for-loops.
+using two for-loops we have two value of i and j, as we know the equation i + j + k = 0, we can find value of k, k = - i - j
+
+now we can solve this problem using hashing as used in TwoSum problem.
 
  */
 package com.dsa.lc;
 
 import java.util.*;
 
-public class ThreeSumOptimized {
+public class ThreeSumBetter {
     public List<List<Integer>> threeSum(int[] nums) {
 
         Set<List<Integer>> tripletSet = new HashSet<>();
@@ -49,10 +51,10 @@ public class ThreeSumOptimized {
         for(int i = 0; i < nums.length; i++){
             Map<Integer,Integer> map = new HashMap<>();
             for(int j = i + 1; j < nums.length; j++){
-                int target = - nums[i] - nums[j];  // i + j + k = 0, so k = -i -j
+                int k = - nums[i] - nums[j];
 
-                if(map.containsKey(target)){
-                    List<Integer> triplet = Arrays.asList(nums[i], nums[j], target);
+                if(map.containsKey(k)){
+                    List<Integer> triplet = Arrays.asList(nums[i], nums[j], k);
                     Collections.sort(triplet);
                     tripletSet.add(triplet);
                 }else{
