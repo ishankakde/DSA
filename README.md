@@ -15,6 +15,7 @@
 |[152. Maximum Product Subarray](https://github.com/ishankakde/DSA/tree/develop/152.%20Maximum%20Product%20Subarray)|
 |[Reverse An Array](https://github.com/ishankakde/DSA/tree/develop/ReverseAnArray)|
 |[189. Rotate Array](https://github.com/ishankakde/DSA/tree/develop/189.%20Rotate%20Array)|
+|[11. Container With Most Water](https://github.com/ishankakde/DSA/tree/develop/11.%20Container%20With%20Most%20Water)|
 |**binary search**|
 |[704. Binary Search](https://github.com/ishankakde/DSA/tree/develop/704.%20Binary%20Search)|
 |[153. Find Minimum in Rotated Sorted Array](https://github.com/ishankakde/DSA/tree/develop/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array)|
