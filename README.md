@@ -34,4 +34,5 @@
 |[70. Climbing Stairs](https://github.com/ishankakde/DSA/tree/develop/70.%20Climbing%20Stairs)|
 |[322. Coin Change](https://github.com/ishankakde/DSA/tree/develop/322.%20Coin%20Change)|
 |[300. Longest Increasing Subsequence](https://github.com/ishankakde/DSA/tree/develop/300.%20Longest%20Increasing%20Subsequence)|
-|[]()|
+|**strings**|
+|[3. Longest Substring Without Repeating Characters](https://github.com/ishankakde/DSA/tree/develop/3.%20Longest%20Substring%20Without%20Repeating%20Characters)|
