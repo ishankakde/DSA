@@ -39,5 +39,6 @@
 |[424. Longest Repeating Character Replacement](https://github.com/ishankakde/DSA/blob/develop/424.%20Longest%20Repeating%20Character%20Replacement/LongestCharReplacement.java)|
 |[242. Valid Anagram](https://github.com/ishankakde/DSA/blob/develop/242.%20Valid%20Anagram)|
 |[49. Group Anagrams](https://github.com/ishankakde/DSA/tree/develop/49.%20Group%20Anagrams)|
+|[125. Valid Palindrome](https://github.com/ishankakde/DSA/tree/develop/125.%20Valid%20Palindrome)|
 |**stack**|
 |[20. Valid Parentheses](https://github.com/ishankakde/DSA/tree/develop/20.%20Valid%20Parentheses)|
