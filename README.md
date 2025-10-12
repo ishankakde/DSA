@@ -1,7 +1,8 @@
 # DSA
 
+[DSA roadmap](https://neetcode.io/roadmap)
 
-[blind 75 leet code problems](https://www.teamblind.com/post/new-year-gift-curated-list-of-top-75-leetcode-questions-to-save-your-time-oam1oreu)
+[blind 75 leet code problems](https://www.teamblind.com/post/new-year-gift-curated-list-of-top-75-leetcode-questions-to-save-your-time-oam1oreu)  
 |Problem Index|
 |-----|
 |**arrays**|
