@@ -43,5 +43,6 @@
 |[125. Valid Palindrome](https://github.com/ishankakde/DSA/tree/develop/125.%20Valid%20Palindrome)|
 |[647. Palindromic Substrings](https://github.com/ishankakde/DSA/tree/develop/647.%20Palindromic%20Substrings)|
 |[5. Longest Palindromic Substring](https://github.com/ishankakde/DSA/tree/develop/5.%20Longest%20Palindromic%20Substring)|
+|[271. Encode and Decode Strings](https://github.com/ishankakde/DSA/tree/develop/271.%20Encode%20and%20Decode%20Strings)|
 |**stack**|
 |[20. Valid Parentheses](https://github.com/ishankakde/DSA/tree/develop/20.%20Valid%20Parentheses)|
