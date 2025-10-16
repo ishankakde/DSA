@@ -42,9 +42,9 @@ public class SearchRotatedArrayII {
                 return true;
             }
 
-            if(nums[start] == nums[mid]){  // duplicate check, if present move start pointer & continue to next iteration.
-                start++;                   // duplicates makes the algorithms worst case scenario to O(n)
-                continue;
+            if(nums[start] == nums[mid]){   // duplicate check
+                start++;                    // move start pointer & continue to re-evaluate while condition.
+                continue;                   // duplicates makes the algorithms worst case scenario to O(n)
             }
 
             if(nums[mid] > nums[start]){ //left sorted
