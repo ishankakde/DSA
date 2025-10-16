@@ -36,22 +36,18 @@ public class SearchRotatedArrayII {
         int end = nums.length - 1;
 
         while(start <= end) {
-            int mid = start + (end - start) / 2;
 
-            //if mid is the target
-            if(target == nums[mid]){
+            int mid = start + (end - start) / 2;
+            if(nums[mid] == target){
                 return true;
             }
 
-            // duplicate check, if present move start pointer & continue to next iteration.
-            // duplicates makes it algorithms worst case scenario to O(n)
-            if(nums[start] == nums[mid]){
-                start++;
+            if(nums[start] == nums[mid]){  // duplicate check, if present move start pointer & continue to next iteration.
+                start++;                   // duplicates makes the algorithms worst case scenario to O(n)
                 continue;
             }
 
-            //left sorted
-            if(nums[start] < nums[mid]){
+            if(nums[mid] > nums[start]){ //left sorted
                 if(target >= nums[start] && target <= nums[mid]){
                     end = mid - 1;
                 }else{
