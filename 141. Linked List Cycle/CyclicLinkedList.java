@@ -12,10 +12,28 @@ tail's next pointer is connected to. Note that pos is not passed as a parameter.
 
 Return true if there is a cycle in the linked list. Otherwise, return false.
 
+Example 1:
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+
+Example 2:
+Input: head = [1,2], pos = 0
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+
+Example 3:
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list.
+
 logic -
-If a linkedList is not cyclic then fast pointer will reach to then end.
-If linked list is cyclic then fast pointer will never be null and at some point fast
-and slow pointer will meet & point to same node.
+
+Initialize two pointers, slow and fast, both starting at the head of the linked list.
+Move the slow pointer one node at a time, and the fast pointer two nodes at a time.
+During traversal, if the slow and fast pointers meet, a cycle exists in the linked list.
+If the fast pointer reaches the end of the list (null or fast.next == null), there is no cycle.
+The method returns true if a cycle is detected; otherwise, it returns false.
 
  */
 package com.dsa.lc;
