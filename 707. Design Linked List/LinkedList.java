@@ -69,7 +69,7 @@ deleteAtIndex(int index)
 
 package com.dsa.lc;
 
-class LinkedList {
+public class LinkedList {
 
     public class Node{
         int val;
