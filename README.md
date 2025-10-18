@@ -28,6 +28,7 @@
 |[141. Linked List Cycle](https://github.com/ishankakde/DSA/tree/develop/141.%20Linked%20List%20Cycle)|
 |[876. Middle of the Linked List](https://github.com/ishankakde/DSA/tree/develop/876.%20Middle%20of%20the%20Linked%20List)|
 |[21. Merge Two Sorted Lists](https://github.com/ishankakde/DSA/tree/develop/21.%20Merge%20Two%20Sorted%20Lists)|
+|[206. Reverse Linked List](https://github.com/ishankakde/DSA/tree/develop/206.%20Reverse%20Linked%20List)|
 |**recursion**|
 |[recursion](https://github.com/ishankakde/DSA/tree/develop/Recursion)|
 |**dynamic programming**|
