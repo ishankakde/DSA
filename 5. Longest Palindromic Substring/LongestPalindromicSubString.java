@@ -86,7 +86,7 @@ public class LongestPalindromicSubString {
         int left = mid1;
         int right = mid2;
 
-        while(left >= 0 && right < s.length() && s.charAt(left) != s.charAt(right)){
+        while(left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)){
             left--;
             right++;
         }
