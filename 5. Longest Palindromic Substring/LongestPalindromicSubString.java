@@ -73,7 +73,7 @@ public class LongestPalindromicSubString {
 
             int maxPalindromeLength = Math.max(palindromeOddLength, palindromeEvenLength);
 
-            //based of the length of palindrome found and value of i, find & update start and end pointer.
+            //update start and end if the new palindrome is longer than the previous max.
             if(maxPalindromeLength > (end - start)){
                 start = i - (maxPalindromeLength - 1) / 2;
                 end   = i +  maxPalindromeLength / 2;
