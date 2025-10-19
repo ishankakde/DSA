@@ -32,13 +32,13 @@ As we are searching a palindromic substring, a palindrome could be of an even (2
 The code iterates through each character of string, treating each character as a mid of the potential palindrome.
 As the potential palindrome can be of even/odd length, we look up for both even and odd length palindromes.
 
-At each character/iteration, we find the length potential even or odd length palindrome, using expandOutwardThroughCenter().
-why subtrating -1 here - return right - left - 1;
+At each character/iteration, we find the length (right - left - 1) potential even or odd length palindrome,
+using expandOutwardThroughCenter().
+why length = right - left - 1 ?
 because left and right have moved one step too far — they now point just outside the palindrome.
-Then find max length of the current even/odd palindromes using Math.max(palindromeOddLength, palindromeEvenLength);
+Then find max length of the current even/odd palindromes.
 
 Then we compare it with the length of the longest one found so far, using below condition -
-
 if(maxPalindromeLength > (end - start))
 here, we are comparing the length of current iteration palindrome with longest found so far.
 here (end - start) pointers defines the max palindrome found so far.
@@ -69,13 +69,13 @@ public class LongestPalindromicSubString {
 
         for(int i = 0; i < s.length(); i++){
             int palindromeOddLength  = expandOutwardThroughCenter(s, i, i);
-            int palindromeEvenLength = expandOutwardThroughCenter(s, i, i+1);
+            int palindromeEvenLength = expandOutwardThroughCenter(s, i, i + 1);
 
             int maxPalindromeLength = Math.max(palindromeOddLength, palindromeEvenLength);
 
             //based of the length of palindrome found and value of i, find & update start and end pointer.
             if(maxPalindromeLength > (end - start)){
-                start = i - (maxPalindromeLength - 1)/2;
+                start = i - (maxPalindromeLength - 1) / 2;
                 end   = i +  maxPalindromeLength / 2;
             }
         }
@@ -86,10 +86,7 @@ public class LongestPalindromicSubString {
         int left = mid1;
         int right = mid2;
 
-        while(left >= 0 && right < s.length()){
-            if(s.charAt(left) != s.charAt(right)){
-                break;
-            }
+        while(left >= 0 && right < s.length() && s.charAt(left) != s.charAt(right)){
             left--;
             right++;
         }
