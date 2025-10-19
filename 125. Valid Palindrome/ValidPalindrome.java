@@ -29,7 +29,6 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 Logic -
 Uses two pointer approach
-converts string to character array and points start and end pointer.
 validate for any non-alphanumeric character and skip them by start++ or end --
 use continue keyword to re-eavaluate while loop condition after each skip.
 Lowercase the character before compare.
@@ -42,20 +41,24 @@ package com.dsa.lc;
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {
 
-        char[] charArray = s.toCharArray();
         int start = 0;
-        int end = charArray.length - 1;
+        int end = s.length() - 1;
 
         while (start < end){
-            if(!Character.isLetterOrDigit(charArray[start])){
+
+            char startChar = s.charAt(start);
+            if(!Character.isLetterOrDigit(startChar)){
                 start++;
                 continue;
             }
-            if(!Character.isLetterOrDigit(charArray[end])){
+
+            char endChar = s.charAt(end);
+            if(!Character.isLetterOrDigit(endChar)){
                 end--;
                 continue;
             }
-            if(Character.toLowerCase(charArray[start]) != Character.toLowerCase(charArray[end])){
+
+            if(Character.toLowerCase(startChar) != Character.toLowerCase(endChar)){
                 return false;
             }
             start++;
