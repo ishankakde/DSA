@@ -47,7 +47,8 @@ public class ValidParentheses {
     public boolean isValid(String s) {
 
         Stack<Character> stack = new Stack<>();
-        for(char currBracket : s.toCharArray()){
+        for(int i = 0; i < s.length(); i++){
+            char currBracket = s.charAt(i);
             if(currBracket == '[' || currBracket == '{' || currBracket == '('){
                 stack.push(currBracket); // add opening bracket
             }else{
