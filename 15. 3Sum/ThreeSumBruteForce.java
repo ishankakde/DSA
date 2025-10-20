@@ -59,6 +59,6 @@ public class ThreeSumBruteForce {
                 }
             }
         }
-        return new ArrayList(output); //convert set to list
+        return new ArrayList(set); //convert set to list
     }
 }
