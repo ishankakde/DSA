@@ -26,7 +26,7 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 logic -
 
 The algorithm employs a linear-time strategy (Kadane’s Algorithm) by maintaining a
-variable currentSum to trackthe sum of the current contiguous subarray.
+variable currentSum to track the sum of the current contiguous subarray.
 
 If currentSum becomes negative, it is reset to zero since a negative sum
 would reduce the potential maximum. The algorithm keeps updating maxSum to store
