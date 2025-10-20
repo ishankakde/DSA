@@ -23,14 +23,14 @@ Input: nums = [5,4,-1,7,8]
 Output: 23
 Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
-    logic -
+logic -
 
-    The algorithm employs a linear-time strategy (Kadane’s Algorithm) by maintaining a variable currentSum to track
-    the sum of the current contiguous subarray. If currentSum becomes negative, it is reset to zero since a negative sum
-    would reduce the potential maximum. The algorithm keeps updating maxSum to store the highest sum seen so far,
-    ensuring the maximum subarray is found efficiently.
+The algorithm employs a linear-time strategy (Kadane’s Algorithm) by maintaining a variable currentSum to track
+the sum of the current contiguous subarray. If currentSum becomes negative, it is reset to zero since a negative sum
+would reduce the potential maximum. The algorithm keeps updating maxSum to store the highest sum seen so far,
+ensuring the maximum subarray is found efficiently.
 
-    Kadane's Algorithm is a form of dynamic programming.
+Kadane's Algorithm is a form of dynamic programming.
 
  */
 
@@ -39,12 +39,14 @@ package com.dsa.lc;
 public class MaxSubArrayKadanesAlgorithm {
 
     public int maxSubArray(int[] nums) {
-        int maxSum = nums[0];
+
         int currentSum = 0;
+        int maxSum = nums[0];
 
         for(int i = 0; i < nums.length; i++){
             currentSum = currentSum + nums[i];
             maxSum = Math.max(maxSum, currentSum);
+            
             if(currentSum < 0){
                 currentSum = 0;
             }
