@@ -44,26 +44,23 @@ public class MinimumRotatedArrayII {
         int start = 0;
         int end = nums.length - 1;
 
-        // if the array is not rotated at all or rotated a full cycle (equal to its length)
-        // this is optional conditional to optimize code.
-        if(nums[start] < nums[end]){
+        if(nums[start] < nums[end]){   //Optional condition - if the array is not rotated or rotated to a full cycle.
             return nums[start];
         }
 
         while(start < end){
             int mid = start + (end - start) / 2;
 
-            if(nums[mid] > nums[end]){     // Pivot is in the right half excluding mid
+            if(nums[mid] > nums[end]){   //Pivot is in the right half excluding mid
                  start = mid + 1;
-            }else if(nums[mid] < nums[end]){     // Pivot can be on the left half or at the mid, hence include mid
+            }else if(nums[mid] < nums[end]){   //Pivot can be on the left half or at the mid, hence include mid
                 end = mid;
-            }else{     // mid == end, which means we have found duplicate, reduce search space by 1 from end.
+            }else{   //duplicate, nums[mid] == nums[end], reduce search space by 1 from end.
                 end = end - 1;
             }
         }
 
-        //start == end, pointing to min element
-        return nums[start];
+        return nums[start];   //start == end, pointing to min element
     }
 }
 
