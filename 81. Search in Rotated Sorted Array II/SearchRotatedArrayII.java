@@ -43,19 +43,19 @@ public class SearchRotatedArrayII {
                 return true;
             }
 
-            if(nums[start] == nums[mid]){   // duplicate check
-                start++;                    // move start pointer & continue to re-evaluate while condition.
-                continue;                   // duplicates makes the algorithms worst case scenario to O(n)
+            if(nums[mid] == nums[end]){      // duplicate check
+                end--;                       // reduce search space & re-evaluate while condition.
+                continue;                    // duplicates makes the algorithms worst case scenario to O(n)
             }
 
-            if(nums[mid] > nums[start]){ //left sorted
-                if(target >= nums[start] && target <= nums[mid]){
+            if(nums[mid] > nums[end]){ //left sorted
+                if(target >= nums[start] && target < nums[mid]){
                     end = mid - 1;
                 }else{
                     start = mid + 1;
                 }
             }else{
-                if(target >= nums[mid] && target <= nums[end]){
+                if(target > nums[mid] && target <= nums[end]){
                     start = mid + 1;
                 }else{
                     end = mid - 1;
