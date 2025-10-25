@@ -28,7 +28,7 @@ Output: [4,2,7,1,3,5]
  */
 package com.dsa.lc;
 
-public class SearchBST {
+public class InsertBSTIterative {
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if(root == null){
             root = new TreeNode(val);
