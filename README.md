@@ -3,10 +3,10 @@
 [DSA roadmap](https://neetcode.io/roadmap)
 
 [blind 75 leet code problems](https://www.teamblind.com/post/new-year-gift-curated-list-of-top-75-leetcode-questions-to-save-your-time-oam1oreu)  
-|Problem Index|
-|-----|
-|**arrays**|
-|[1. Two Sum](https://github.com/ishankakde/DSA/tree/develop/1.%20Two%20Sum)|
+|Problem Index||
+|-----|-----|
+|**arrays**|**Binary Search Tree (BST)**|
+|[1. Two Sum](https://github.com/ishankakde/DSA/tree/develop/1.%20Two%20Sum)|[700. Search in a Binary Search Tree](https://github.com/ishankakde/DSA/tree/develop/700.%20Search%20in%20a%20Binary%20Search%20Tree)|
 |[15. 3 Sum](https://github.com/ishankakde/DSA/tree/develop/15.%203Sum)|
 |[121. Best Time to Buy and Sell Stock](https://github.com/ishankakde/DSA/tree/develop/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock)|
 |[217. Contains Duplicate](https://github.com/ishankakde/DSA/tree/develop/217.%20Contains%20Duplicate)|
@@ -47,3 +47,5 @@
 |[271. Encode and Decode Strings](https://github.com/ishankakde/DSA/tree/develop/271.%20Encode%20and%20Decode%20Strings)|
 |**stack**|
 |[20. Valid Parentheses](https://github.com/ishankakde/DSA/tree/develop/20.%20Valid%20Parentheses)|
+
+
