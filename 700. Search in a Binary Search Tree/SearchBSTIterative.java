@@ -22,7 +22,7 @@ Output: []
  */
 package com.dsa.lc;
 
-public class SearchBST {
+public class SearchBSTIterative {
     public TreeNode searchBST(TreeNode root, int val) {
 
         TreeNode temp = root;
