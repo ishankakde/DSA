@@ -5,9 +5,9 @@
 [blind 75 leet code problems](https://www.teamblind.com/post/new-year-gift-curated-list-of-top-75-leetcode-questions-to-save-your-time-oam1oreu)  
 |Problem Index||
 |-----|-----|
-|**arrays**|**Binary Search Tree (BST)**|
-|[1. Two Sum](https://github.com/ishankakde/DSA/tree/develop/1.%20Two%20Sum)|[700. Search in a Binary Search Tree                 ](https://github.com/ishankakde/DSA/tree/develop/700.%20Search%20in%20a%20Binary%20Search%20Tree)|
-|[15. 3 Sum](https://github.com/ishankakde/DSA/tree/develop/15.%203Sum)|
+|**arrays**|**binary search tree (BST)**|
+|[1. Two Sum](https://github.com/ishankakde/DSA/tree/develop/1.%20Two%20Sum)|[700. Search in a Binary Search Tree](https://github.com/ishankakde/DSA/tree/develop/700.%20Search%20in%20a%20Binary%20Search%20Tree)|
+|[15. 3 Sum](https://github.com/ishankakde/DSA/tree/develop/15.%203Sum)|[701. Insert into a Binary Search Tree](https://github.com/ishankakde/DSA/tree/develop/701.%20Insert%20into%20a%20Binary%20Search%20Tree)|
 |[121. Best Time to Buy and Sell Stock](https://github.com/ishankakde/DSA/tree/develop/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock)|
 |[217. Contains Duplicate](https://github.com/ishankakde/DSA/tree/develop/217.%20Contains%20Duplicate)|
 |[238. Product of Array Except Self](https://github.com/ishankakde/DSA/tree/develop/238.%20Product%20of%20Array%20Except%20Self)|
