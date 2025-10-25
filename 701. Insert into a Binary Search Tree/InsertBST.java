@@ -44,13 +44,15 @@ public class SearchBST {
                     temp.left = new TreeNode(val);
                     break;
                 }
-            }else{
+            }else if(val > temp.val){
                 if(temp.right != null){
                     temp = temp.right;
                 }else{
                     temp.right = new TreeNode(val);
                     break;
                 }
+            }else{ // val == temp.val, val already exist
+                break;
             }
         }
         return root;
