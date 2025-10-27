@@ -32,8 +32,8 @@ Add the current node’s value to the result list.
 Recursively call the function on the left child.
 Recursively call the function on the right child.
 This ensures nodes are visited in Root → Left → Right order.
-
  */
+
 package com.dsa.lc;
 
 public class DepthFirstSearchPreOrder {
