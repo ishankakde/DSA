@@ -23,12 +23,9 @@ Example 4:
 Input: root = [1]
 Output: [1]
 
-
-
 Logic -
 
-Preorder Traversal means:
-Root → Left → Right
+Preorder Traversal means: Root → Left → Right
 
 If the current node is null, return.
 Add the current node’s value to the result list.
