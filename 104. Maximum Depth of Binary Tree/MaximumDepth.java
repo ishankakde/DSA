@@ -26,7 +26,7 @@ package com.dsa.lc;
 public class MaximumDepth {
 
     public int maxDepth(TreeNode root) {
-        //end condition
+        //base case or end condition
         if(root == null){
             return 0;
         }
