@@ -20,7 +20,6 @@ Input: root = []
 Output: []
 
 Logic -
-Sure! Here’s a short, plain-text logic explanation (about 4–5 lines):
 
 1. If the current node is `null`, just return — there’s nothing to invert.
 2. Swap the left and right child of the current node.
