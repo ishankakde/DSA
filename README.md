@@ -14,7 +14,7 @@
 |[Find All Sub-Arrays](https://github.com/ishankakde/DSA/tree/develop/Find%20All%20Sub-Arrays)|[94. Binary Tree Inorder Traversal](https://github.com/ishankakde/DSA/tree/develop/94.%20Binary%20Tree%20Inorder%20Traversal)|
 |[53. Maximum Sum Subarray](https://github.com/ishankakde/DSA/tree/develop/53.%20Maximum%20Sum%20Subarray)|[104. Maximum Depth of Binary Tree](https://github.com/ishankakde/DSA/tree/develop/104.%20Maximum%20Depth%20of%20Binary%20Tree)|
 |[152. Maximum Product Subarray](https://github.com/ishankakde/DSA/tree/develop/152.%20Maximum%20Product%20Subarray)|[100. Same Tree](https://github.com/ishankakde/DSA/tree/develop/100.%20Same%20Tree)|
-|[Reverse An Array](https://github.com/ishankakde/DSA/tree/develop/ReverseAnArray)|
+|[Reverse An Array](https://github.com/ishankakde/DSA/tree/develop/ReverseAnArray)|[226. Invert Binary Tree](https://github.com/ishankakde/DSA/tree/develop/226.%20Invert%20Binary%20Tree)|
 |[189. Rotate Array](https://github.com/ishankakde/DSA/tree/develop/189.%20Rotate%20Array)|
 |[11. Container With Most Water](https://github.com/ishankakde/DSA/tree/develop/11.%20Container%20With%20Most%20Water)|
 |**binary search**|
